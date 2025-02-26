@@ -1,4 +1,4 @@
-#---------------------[BM-KARWAN]---------------------#
+#---------------------[FayeqHack]---------------------#
 #BARIE AND MURTAZA IS THE BEST OF THE CRACK TOOLS SYESTUM#
 #AFGHANISTAN TRICKERS
 import os
@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup as bxx
 import os,base64,zlib,pip,urllib,sys,time,platform,pip,uuid,subprocess
 print('\033[1;32m FOLLOW MY TELEGRAM CHANNEL..\033[1;32m')
 #os.system("pip uninstall urllib3 requests chardet idna certifi -y");os.system("pip install urllib3 requests chardet idna certifi")
-os.system('xdg-open https://t.me/Barie_tech007')
+os.system('xdg-open https://t.me/Fayeq03')
 print(' ')
 from bs4 import BeautifulSoup as sop
 try:
@@ -156,11 +156,11 @@ prox=open('socks5.txt','r').read().splitlines()
 
 logo=("""                  
 
- \33[1;30m██████     █████╗     \033[1;31m██          ██╗  ██████║    \033[1;32m██████████║
- \33[1;30m██╔══       ██╔══██╗\033[1;31m██        ██║   ██╔═══    \033[1;32m██                               ██║
- \33[1;30m█████       ███████║\033[1;31m  █████║     █████║   \033[1;32m██                                  ██ ║ 
- \33[1;30m██╔══       ██╔══██║        \033[1;31m██║ ╝      ██╔══╝    \033[1;32m██                 █           ██║
- \33[1;30m██║               ██║        ██║      \033[1;31m███║         ██████║       \033[1;32m██████ █ █║
+ \33[1;30m██████     █████╗     \033[1;31m██          ██╗  ██████   \033[1;32m     █████████║
+ \33[1;30m██╔══       ██╔══██╗\033[1;31m██        ██║   ██╔═══   \033[1;32m ██                            ██║
+ \33[1;30m█████       ███████║\033[1;31m  █████║     █████║   \033[1;32m██                              ██ ║ 
+ \33[1;30m██╔══       ██╔══██║\033[1;31m        ██║ ╝      ██╔══╝    \033[1;32m██                 █       ██║
+ \33[1;30m██║               ██║        ██║\033[1;31m      ███║         ██████║\033[1;32m    ████████║
 \033[0;94m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗                       \033[1;33m 
 ╠══[\033[1;33m[•] AUTHOR   \33[0;m:\033[1;35m FAYEQ \033[1;36mHACK
 ╠══[\033[1;32m[•] FACEBOOK \033[1;32m:\033[1;32m FAYEQ \033[1;33mNASEH
